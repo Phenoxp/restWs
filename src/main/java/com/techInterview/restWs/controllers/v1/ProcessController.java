@@ -23,12 +23,6 @@ public class ProcessController {
 	@Autowired
 	private NumberTranslateService numberService;
 	
-	/*@GetMapping("/stringDedup")
-	@ResponseBody
-	public ResponseEntity<String> stringDedup(@RequestParam String chaine) {
-		return new ResponseEntity(stringService.uniqueOrderedString(chaine), HttpStatus.OK);
-	}*/
-	
 	@GetMapping("/stringDedup")
 	@ResponseBody
 	public ResponseEntity stringDedup(@RequestParam String value) {
